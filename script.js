@@ -8,3 +8,6 @@ const winPatterns = [
 ];
 
 // adding event listerner
+boxes.forEach(element => {
+    
+});
