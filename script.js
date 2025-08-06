@@ -15,5 +15,8 @@ boxes.forEach((box) => {
         box.innerText = "O";
         turnO = false;
        }
+       else{
+         box.innerText = "X";
+       }
     });
 });
