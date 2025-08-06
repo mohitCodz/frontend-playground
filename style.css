@@ -44,3 +44,12 @@ body {
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
     border-radius: 0.4rem;
 }
+
+#mew-game {
+     height: 5vmin;
+    width: 9vmin;
+    font-size: 1.1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.4rem;
+}
