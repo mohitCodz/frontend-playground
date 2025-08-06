@@ -1,5 +1,6 @@
 let boxes = document.querySelectorAll(".box");
 let reset = document.querySelector("#reset");
+let newBtn = document.querySelector("new-game");
 
 let turnO = true; // playerX,playerO
 
