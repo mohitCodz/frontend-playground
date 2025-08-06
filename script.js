@@ -29,6 +29,12 @@ const checkWinner = () => {
         let pos1Val = boxes[pattren[0]].innerText;
         let pos2Val = boxes[pattren[1]].innerText;
         let pos3Val = boxes[pattren[2]].innerText;
+
+        if(pos1Val != "" && pos2Val != "" && pos3Val != ""){
+            if(pos1Val == pos2Val && pos2Val == pos3Val){
+                console.log("Winner")
+            }
+        }
     }
 
 };
