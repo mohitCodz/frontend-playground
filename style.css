@@ -8,6 +8,11 @@ body {
 }
 .container {
     height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8vmin;
 }
 .game {
     height: 60vmin; 
