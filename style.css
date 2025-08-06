@@ -55,5 +55,6 @@ body {
 }
 
 #msg-container {
-       
+       color: #ffffc7;
+       font-size: 8vmin;
 }
