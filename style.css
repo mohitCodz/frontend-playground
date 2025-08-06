@@ -21,8 +21,10 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1.8vmin;
+   
 }
 .box {
     height: 18vmin;
      width: 18vmin;
+      border-radius: 1rem;
 }
