@@ -12,3 +12,6 @@ body {
 .game {
     height: 60vmin; 
 }
+.box {
+    height: 18vmin;
+}
