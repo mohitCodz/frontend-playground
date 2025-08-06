@@ -26,6 +26,6 @@ boxes.forEach((box) => {
 
 const checkWinner = () => {
 for(pattren of winPatterns){
-    console.log(pattren);
+    console.log(boxes[pattren[0]],boxes[pattren[1]],boxes[pattren[2]]);
 }
 }
