@@ -21,4 +21,11 @@ boxes.forEach((box) => {
        }
        box.disabled = true;
     });
+    checkWinner();
 });
+
+const checkWinner = () =>{
+for(pattren of winPatterns){
+    console.log(pattren);
+}
+}
