@@ -19,6 +19,6 @@ boxes.forEach((box) => {
          box.innerText = "X";
           turnO = true;
        }
-       box.ariaDisabled = "true"
+       box.ariaDisabled = true;
     });
 });
