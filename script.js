@@ -1,2 +1,2 @@
 let boxes = document.querySelectorAll(".box");
-let reset
+let reset = document.querySelector("#reset")
