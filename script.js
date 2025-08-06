@@ -10,6 +10,6 @@ const winPatterns = [
 // adding event listerner
 boxes.forEach((box) => {
     box.addEventListener("click", ()=>{
-        console.log("box was clickef")
+        console.log("box was clicked")
     })
 });
