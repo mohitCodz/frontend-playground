@@ -30,3 +30,11 @@ body {
       border: none;
       box-shadow: 0 0 1rem rgba(0 ,0 ,0 ,0.2);
 }
+
+#reset {
+    height: 4vmin;
+    width: 6vmin;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0 ,0 ,0 ,0.2);
+    border-radius: 0.4rem;
+}
