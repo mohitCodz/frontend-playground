@@ -17,6 +17,7 @@ boxes.forEach((box) => {
        }
        else{
          box.innerText = "X";
+          turnO = true;
        }
     });
 });
