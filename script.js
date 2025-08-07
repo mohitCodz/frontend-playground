@@ -35,6 +35,7 @@ const disabledBoxes = () => {
 const showWinner = (winner) => {
     msg.innerText = 'Congratulations, Winner is ${Winner}';
     msgContainer.classList.remove("hide");
+    disabledBoxes();
 }
 const checkWinner = () => {
     for (pattren of winPatterns) {
