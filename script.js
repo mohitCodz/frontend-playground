@@ -32,11 +32,19 @@ const disabledBoxes = () => {
         box.disabled = true;
     }
 }
+const enableBoxes = () => {
+    for(box of boxes){
+        box.disabled = false;
+    }
+}
+
 const showWinner = (winner) => {
     msg.innerText = 'Congratulations, Winner is ${Winner}';
     msgContainer.classList.remove("hide");
     disabledBoxes();
 }
+
+
 const checkWinner = () => {
     for (pattren of winPatterns) {
         let pos1Val = boxes[pattren[0]].innerText;
