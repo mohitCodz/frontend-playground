@@ -60,7 +60,8 @@ body {
 }
 
 .msg-container {
-     height: 30vmin;
+     height: 80vmin;
+     display: flex;
 }
 .hide {
     display: none;
