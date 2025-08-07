@@ -61,7 +61,6 @@ const checkWinner = () => {
 
         if (pos1Val != "" && pos2Val != "" && pos3Val != "") {
             if (pos1Val == pos2Val && pos2Val == pos3Val) {
-                console.log("Winner");
                 showWinner(pos1Val);
             }
         }
