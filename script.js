@@ -40,7 +40,7 @@ const disabledBoxes = () => {
 }
 const enableBoxes = () => {
     for(box of boxes){
-        box.disabled = ;
+        box.disabled = false;
     }
 }
 
