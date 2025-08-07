@@ -27,6 +27,12 @@ boxes.forEach((box) => {
     });
 });
 
+
+const resetGame = () => {
+    turnO = true;
+    enableBoxes();
+}
+
 const disabledBoxes = () => {
     for(box of boxes){
         box.disabled = true;
@@ -34,7 +40,7 @@ const disabledBoxes = () => {
 }
 const enableBoxes = () => {
     for(box of boxes){
-        box.disabled = false;
+        box.disabled = ;
     }
 }
 
@@ -60,7 +66,3 @@ const checkWinner = () => {
     }
 
 };
-
-const resetGame = () => {
-    turnO = true;
-}
