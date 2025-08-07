@@ -27,7 +27,7 @@ boxes.forEach((box) => {
     });
 });
 const showWinner = () => {
-
+msg.innerText = "Winner";
 };
 const checkWinner = () => {
     for (pattren of winPatterns) {
@@ -38,7 +38,8 @@ const checkWinner = () => {
         if(pos1Val != "" && pos2Val != "" && pos3Val != ""){
             if(pos1Val == pos2Val && pos2Val == pos3Val){
                 console.log("Winner");
-                showWinner();            }
+                showWinner(pos1Val);           
+             }
         }
     }
 
