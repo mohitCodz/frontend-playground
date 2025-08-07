@@ -34,19 +34,19 @@ const resetGame = () => {
 }
 
 const disabledBoxes = () => {
-    for(box of boxes){
+    for (box of boxes) {
         box.disabled = true;
     }
 }
 const enableBoxes = () => {
-    for(box of boxes){
+    for (box of boxes) {
         box.disabled = false;
-        box.innerText= "";
+        box.innerText = "";
     }
 }
 
 const showWinner = (winner) => {
-    msg.innerText = 'Congratulations, Winner is ${Winner}';
+    msg.innerText = `Congratulations, Winner is ${Winner}`;
     msgContainer.classList.remove("hide");
     disabledBoxes();
 }
@@ -67,5 +67,5 @@ const checkWinner = () => {
 
 };
 
-newBtn.addEventListener("click",resetGame);
-reset.addEventListener("click",resetGame);
+newBtn.addEventListener("click", resetGame);
+reset.addEventListener("click", resetGame);
