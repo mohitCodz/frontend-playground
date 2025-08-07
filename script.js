@@ -27,7 +27,7 @@ boxes.forEach((box) => {
     });
 });
 const showWinner = () => {
-msg.innerText = "Winner";
+msg.innerText = ' Congratulation , Winner is $' ;
 };
 const checkWinner = () => {
     for (pattren of winPatterns) {
