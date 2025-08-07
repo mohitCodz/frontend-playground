@@ -47,5 +47,5 @@ const checkWinner = () => {
 };
 
 const resetGame = () => {
-    
+    turnO = true;
 }
