@@ -45,3 +45,7 @@ const checkWinner = () => {
     }
 
 };
+
+const resetGame = () => {
+    
+}
