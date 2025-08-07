@@ -29,7 +29,7 @@ boxes.forEach((box) => {
 
 const disabledBoxes = () => {
     for(box of boxes){
-        
+        box.disabled = true;
     }
 }
 const showWinner = (winner) => {
