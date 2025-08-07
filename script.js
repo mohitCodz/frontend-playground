@@ -31,6 +31,7 @@ boxes.forEach((box) => {
 const resetGame = () => {
     turnO = true;
     enableBoxes();
+    msgContainer.classList.add("hide");
 }
 
 const disabledBoxes = () => {
@@ -67,3 +68,6 @@ const checkWinner = () => {
     }
 
 };
+
+newBtn.addEventListener("click",resetGame);
+newBtn.addEventListener("click",resetGame);
