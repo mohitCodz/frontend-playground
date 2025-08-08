@@ -12,7 +12,7 @@ const winPatterns = [
 
 // adding event listerner
 boxes.forEach((box) => {
-    box.addEventListener("click", () => 
+    box.addEventListener("click", () => {
     
         if (turnO) { // playerO's turn
             box.innerText = "O";
