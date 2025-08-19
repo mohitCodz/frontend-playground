@@ -20,18 +20,20 @@ for (let select of dropdowns) {
     select.append(newOption);
   }
 
+  select.addEventListener("change", (evt) => {
+    updateFlag(evt.target);
+  });
 }
 
-// event listener
-select.addEventlisterner("change", (evt)=>{
-let currCode = Element.value;
-let countryCode = countryList[currCode]; 
-let newSrc = 'https://flagsapi.com/${countryCode}/flat/64.png';
-let img = element.parentElement.querySelector("img");
-img.src = newSrc;
-});
-
-btn.addEventListener("click",(evt)=>{
-evt.preventDefault();
-let amount = document.querySelector(".amount input");
-});
+const updateExchangeRate = async (evt) => {
+    evt.preventDefault();
+  let amount = document.querySelector(".amount input");
+  let amtVal = amount.value;
+  if (amtVal === "" || amtVal < 1) {
+    amtVal = 1;
+    amount.value = "1";
+  }
+  console.log(fromCurr.value,toCurr.value);
+  const URL = `${BASE_URL}/${fromCurr.value.toLowerCase()}/${toCurr.value.toLowerCase()}.json`;
+let response = await fetch(URL);
+};
