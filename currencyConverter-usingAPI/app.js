@@ -20,4 +20,10 @@ for (let select of dropdowns) {
     select.append(newOption);
   }
 
-  
+}
+
+// event listener
+select.addEventlisterner("change", (evt)=>{
+let currCode = Element.value;
+let countryCode = countryList[currCode]; 
+});
