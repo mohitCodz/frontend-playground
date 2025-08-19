@@ -1,20 +1,20 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
-  background-color: #F1F5F9;
-  font-family: Arial, sans-serif;
-  text-align: center;   /* keeps heading centered horizontally */
+  background-color: #f4e4ba;
 }
 
 .container {
-  background-color: #FFFFFF;
+  background-color: #fff;
   padding: 2rem;
   border-radius: 1rem;
   min-height: 45vh;
-  min-width: 60vw;
+  width: 40vh;
 }
