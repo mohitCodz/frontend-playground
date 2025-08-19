@@ -63,10 +63,11 @@ form input {
 .msg {
     margin:2rem 0 2 rem;
 }
+
 form button {
-    height: 3rem;
-    background-color:#60A5FA;
-    color: white;
-    font-size: 1.15rem;
-    cursor: pointer;
+  height: 3rem;
+  background-color: #af4d98;
+  color: #fff;
+  font-size: 1.15rem;
+  cursor: pointer;
 }
