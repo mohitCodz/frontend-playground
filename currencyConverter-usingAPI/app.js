@@ -30,3 +30,8 @@ let newSrc = 'https://flagsapi.com/${countryCode}/flat/64.png';
 let img = element.parentElement.querySelector("img");
 img.src = newSrc;
 });
+
+btn.addEventListener("click",(evt)=>{
+evt.preventDefault();
+let amount = document.querySelector(".amount input");
+});
