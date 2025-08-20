@@ -46,3 +46,19 @@ const updateExchangeRate = async () => {
   msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
 };
 
+onst updateFlag = (element) => {
+  let currCode = element.value;
+  let countryCode = countryList[currCode]; // must exist in countryList.js
+  let newSrc = `https://flagsapi.com/${countryCode}/flat/64.png`;
+  let img = element.parentElement.querySelector("img");
+  img.src = newSrc;
+};
+
+btn.addEventListener("click", (evt) => {
+  evt.preventDefault();
+  updateExchangeRate();
+});
+
+window.addEventListener("load", () => {
+  updateExchangeRate();
+});
