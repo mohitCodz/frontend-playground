@@ -14,3 +14,11 @@ function addTask(){
     }
     inputBox.value = "";
 }
+listContainer.addEventListener("click",function(e){
+    if(e.target.targetName === "li"){
+        e.target.classList.toggle("checked");
+    }
+    else if(e.target.targetName === "SPAN"){
+        e.target.parentElement.remove();
+    }
+},false);
