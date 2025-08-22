@@ -13,12 +13,17 @@ function addTask(){
         li.appendChild(span);
     }
     inputBox.value = "";
+    saveData(); // it will save the updated data
 }
-listContainer.addEventListener("click",function(e){
-    if(e.target.targetName === "li"){
+listContainer.addEventListener("click", function(e) {
+    if (e.target.tagName === "LI") {
         e.target.classList.toggle("checked");
-    }
-    else if(e.target.targetName === "SPAN"){
+    } 
+    else if (e.target.tagName === "SPAN") {
         e.target.parentElement.remove();
     }
-},false);
+}, false);
+
+function saveData(){
+localStorage.setItem("data",listContainer.innerHTML);
+}
