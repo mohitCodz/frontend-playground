@@ -25,7 +25,12 @@ listContainer.addEventListener("click", function(e) {
         saveData(); // it will save the updated data
     }
 }, false);
-
+// function to daveData
 function saveData(){
 localStorage.setItem("data",listContainer.innerHTML);
 }
+// function to display data
+function displayData(){
+    listContainer.innerHTML = localStorage.getItem("data");
+}
+displayData();
