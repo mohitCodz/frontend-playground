@@ -3,5 +3,5 @@
     let qrText = document.getElementById("qrText");
 
 function generateQR() {
-    
+    qrImg.src = "images/qr.png" + 
 }
