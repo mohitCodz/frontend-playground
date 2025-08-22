@@ -66,38 +66,51 @@ button {
 ul li {
     list-style: none;
     font-size: 17px;
-    padding: 12px 8px 12px 50px;
+    padding: 12px 8px 12px 50px; /* space for circle */
     user-select: none;
     cursor: pointer;
     position: relative;
 }
 
 ul li::before {
-  content: '';
-  position: absolute;
-  height: 28px;
-  width: 28px;
-  border-radius: 50%;
-  background-image: url(images/unchecked.png);
-  background-size: cover;
-  background-position: center;
-  top: 12px;
-  left: 8px;
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%); /* ✅ centers circle with text */
 }
-ul li.checked{
+
+ul li.checked {
     color: #555;
     text-decoration: line-through;
 }
-ul li.checked::before{
-  background-image: url(images/check-mark.png);
+
+ul li.checked::before {
+    background-image: url(images/check-mark.png);
 }
-ul li span{
+
+ul li span {
     position: absolute;
     right: 0;
-    top: 5px;
+    top: 50%;
+    transform: translateY(-50%);  /* Moving element upward by 505 from it's actual height*/
     width: 40px;
     height: 40px;
     font-size: 22px;
     color: #555;
-    line-height: center;
+    display: flex;              
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+ul li span:hover {
+    background: #edeef0; 
 }
