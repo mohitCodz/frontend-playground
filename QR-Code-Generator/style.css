@@ -28,5 +28,6 @@ body {
     border: 1px solid #071E22;
     outline: 0;
     padding: 10px;
-    margin: ;
+    margin: 10px 0 20px;
+    border-radius: 5px;
 }
