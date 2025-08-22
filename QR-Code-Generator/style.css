@@ -13,5 +13,6 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    translate: ;
+    transform: translate(-50% 50%);
+    
 }
