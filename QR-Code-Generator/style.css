@@ -25,6 +25,11 @@ body {
     font-size: 15px;
     margin-bottom: 8px;
 }
+#imgBox {
+  display: none;
+  margin-top: 12px;
+}
+
 
 .container input {
     width: 100%;
