@@ -1,4 +1,4 @@
-# Mini Frontend Projects
+# Mini Frontend Projects💻
 ## Tic Tac Toe
 - Web based **responsive**Tic Tac Toe made by using HTML,CSS and JavaScript.
 ## To-Do list app 
