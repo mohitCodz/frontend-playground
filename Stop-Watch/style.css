@@ -8,7 +8,7 @@ body {
     background: #FEC0AA;
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
 }
 
 .stopwatch {
@@ -25,6 +25,11 @@ body {
     color: #fff;
     margin: 200px auto 0;
     box-shadow: 0 10px 10px rgba(0,0,0,0.8);
+}
+.stopwatch h1{
+    margin-top: 50px;
+    font-size: 64px;
+    font-weight: 300px;
 }
 .button {
     display: flex;             
