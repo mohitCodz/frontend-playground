@@ -6,7 +6,7 @@ body {
     width: 90%;
     max-width: 600px;
     background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(247, 234, 234, 0.3)),
-                      url("images/background2.jpg");
+                      url("images/background.jpg");
     background-size: cover;    
     background-position: center; 
     background-repeat: no-repeat;
