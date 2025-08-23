@@ -1,4 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+}
 body {
+    font-family: 'Courier New', Courier, monospace;
     background: #FEC0AA;
 }
 
@@ -9,5 +16,9 @@ body {
                       url("images/background.jpg");
     background-size: cover;    
     background-position: center; 
-    background-repeat: no-repeat;
+    text-align: center;
+    padding: 40px 0;
+    color: #fff;
+    margin: 200px auto 0;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.);
 }
