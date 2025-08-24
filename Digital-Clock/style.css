@@ -56,6 +56,7 @@
     top: -50px;
     z-index: -1;
     opacity: 0.7;
+    filter: blur(10px);
 }
 
 .container::after{
@@ -69,6 +70,7 @@
     bottom: -50px;
     z-index: -1;
     opacity: 0.7;
+        filter: blur(10px);
 }
 .clock span{
     font-size: 80px;
