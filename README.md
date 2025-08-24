@@ -9,3 +9,5 @@
 ## ⏱️ Stopwatch Web App
 - A **responsive digital stopwatch** built with **HTML, CSS & JavaScript**.  
 - Features **Start ▶️, Stop ⏸️, Reset 🔄**, and a **real-time timer display**.
+## Digital Clock ⏰
+- A **responsive digital clock** built with **HTML, CSS, JavaScript**.
