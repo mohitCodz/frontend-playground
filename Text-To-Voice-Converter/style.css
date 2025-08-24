@@ -1,14 +1,55 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-sizing: border-box;
 }
-.outside{
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(45deg, #010758, #490d61);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.outside {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #010758, #490d61);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* needed for ::before */
+  overflow: hidden;   /* hide extra glow */
+}
+
+/* glowing background layer */
+.outside::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;   /* make it bigger so movement looks smooth */
+  height: 200%;
+  background: radial-gradient(circle at 30% 30%, #00f5ff, transparent 60%),
+              radial-gradient(circle at 70% 70%, #ff00ff, transparent 60%),
+              radial-gradient(circle at 50% 90%, #00ff99, transparent 60%);
+  filter: blur(120px);
+  animation: move 12s infinite alternate ease-in-out;
+  transform-style: preserve-3d;
+  z-index: 0; /* behind content */
+}
+
+/* content stays clear */
+.content {
+  position: relative;
+  z-index: 1; /* above glow */
+  color: white;
+  font-size: 2rem;
+}
+
+/* Animation */
+@keyframes move {
+  0% {
+    transform: translate(-10%, -10%) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: translate(-5%, -15%) rotateX(30deg) rotateY(45deg);
+  }
+  100% {
+    transform: translate(-10%, -10%) rotateX(60deg) rotateY(90deg);
+  }
 }
