@@ -51,9 +51,12 @@
   font-weight: 500;
   margin-top: -50px;
   margin-bottom: 50px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  border: none;
 }
 .outside h1 span{
-  color:#aadc5a;
+  color:#98e122;
 }
 textarea{
   width: 600px;
