@@ -33,14 +33,6 @@
   z-index: 0; /* behind content */
 }
 
-/* content stays clear */
-.content {
-  position: relative;
-  z-index: 1; /* above glow */
-  color: white;
-  font-size: 2rem;
-}
-
 /* Animation */
 @keyframes move {
   0% {
@@ -52,4 +44,23 @@
   100% {
     transform: translate(-10%, -10%) rotateX(60deg) rotateY(90deg);
   }
+}
+
+.outside h1{
+  font-size: 45px;
+  font-weight: 500;
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+.outside h1 span{
+  color:#aadc5a;
+}
+textarea{
+  width: 600px;
+  height: 250px;
+  background: #403d84;
+  color: #fff;
+  font-size: 15px;
+  border: 0;
+  outline: 0;
 }
